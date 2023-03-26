@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script defer src="main.js" type="module"></script>
+    <title>Mushrooms</title>
+</head>
+<body>
+    <div><h3>Javascript Decision Tree</h3></div>
+    <div id="view"></div>
+
+    <div>
+        <h4>Confusion Matrix</h4>
+        <table id="confusion">
+            <tr>
+                <td></td>
+                <td>Predicted poisonous</td>
+                <td>Predicted edible</td>
+            </tr>
+            <tr>
+                <td>Actually poisonous</td>
+                <td id="ppap"> PPAP </td>
+                <td id="peap"> PEAP </td>
+            </tr>
+            <tr>
+                <td>Actually edible</td>
+                <td id="ppae"> PPAE </td>
+                <td id="peae"> PEAE </td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <p id="accuracy"></p>
+    </div>
+</body>
+</html>
